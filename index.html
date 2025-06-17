@@ -8,28 +8,29 @@
     <link rel="icon" href="https://static.cdninstagram.com/rsrc.php/v3/yt/r/AT4K3RsK9p0.png" type="image/png">
     <!-- Link to the CSS file -->
     <link rel="stylesheet" href="style.css">
-    <!-- Inter font for better typography, though Instagram uses a custom system font stack -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Using system fonts for closest match to Instagram's native look -->
 </head>
 <body>
     <main class="main-content">
         <div class="login-container">
-            <img class="instagram-logo" src="https://static.cdninstagram.com/rsrc.php/v3/yS/r/eDRuKxPqL81.png" alt="Instagram">
+            <!-- Instagram Logo -->
+            <img class="instagram-logo" src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" alt="Instagram">
+
             <form class="login-form">
                 <div class="input-group">
-                    <label for="username_or_email" class="sr-only">رقم الهاتف، اسم المستخدم، أو البريد الإلكتروني</label>
-                    <input type="text" id="username_or_email" placeholder="رقم الهاتف، اسم المستخدم، أو البريد الإلكتروني" required aria-label="رقم الهاتف، اسم المستخدم، أو البريد الإلكتروني">
+                    <input type="text" placeholder="رقم الهاتف، اسم المستخدم، أو البريد الإلكتروني" required>
                 </div>
                 <div class="input-group">
-                    <label for="password" class="sr-only">كلمة السر</label>
-                    <input type="password" id="password" placeholder="كلمة السر" required aria-label="كلمة السر">
+                    <input type="password" placeholder="كلمة السر" required>
                 </div>
                 <button type="submit" class="login-button">تسجيل الدخول</button>
+
                 <div class="separator">
                     <div class="line"></div>
                     <p class="or-text">أو</p>
                     <div class="line"></div>
                 </div>
+
                 <a href="#" class="facebook-login">
                     <img src="https://static.cdninstagram.com/rsrc.php/v3/yb/r/KF2iKqHj12S.png" alt="Facebook icon" class="facebook-icon">
                     تسجيل الدخول باستخدام فيسبوك
@@ -46,10 +47,10 @@
             <p class="get-app-text">الحصول على التطبيق.</p>
             <div class="app-badges">
                 <a href="https://apps.apple.com/us/app/instagram/id389801252" target="_blank" rel="noopener noreferrer">
-                    <img src="https://static.cdninstagram.com/rsrc.php/v3/yw/r/f0yRzO_E3bE.png" alt="Download on the App Store" class="app-badge app-store">
+                    <img src="https://www.instagram.com/static/images/appstore-install-badges/Badges/AppStoreBadge.png/d92e62e19d7d.png" alt="Download on the App Store" class="app-badge">
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.instagram.android" target="_blank" rel="noopener noreferrer">
-                    <img src="https://static.cdninstagram.com/rsrc.php/v3/yQ/r/L9WJqXJK2Sj.png" alt="Get it on Google Play" class="app-badge google-play">
+                    <img src="https://www.instagram.com/static/images/appstore-install-badges/Badges/GooglePlayBadge.png/c24151a66014.png" alt="Get it on Google Play" class="app-badge">
                 </a>
             </div>
         </div>
