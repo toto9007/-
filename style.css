@@ -1,0 +1,232 @@
+/* General styling for the body */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 20px 0; /* Add some vertical padding for mobile view */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Main login container styling */
+.login-container {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px; /* Max width for the container */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Instagram logo image styling */
+.instagram-logo {
+    width: 175px; /* Adjust size as needed */
+    margin-bottom: 25px;
+}
+
+/* Login form styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Input field styling */
+.login-form input {
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 10px 8px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #262626;
+    outline: none; /* Remove outline on focus */
+    box-sizing: border-box;
+}
+
+.login-form input::placeholder {
+    color: #8e8e8e;
+}
+
+/* Login button styling */
+.login-form button {
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.login-form button:hover {
+    background-color: #007acb; /* Darker blue on hover */
+}
+
+/* Separator styling for "OR" */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.separator .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.separator p {
+    margin: 0 18px;
+    font-size: 13px;
+    color: #8e8e8e;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Facebook login link styling */
+.facebook-login {
+    color: #385185;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px; /* Space before forgot password */
+    text-align: center;
+}
+
+.facebook-login:hover {
+    text-decoration: underline;
+}
+
+/* Forgot password link styling */
+.forgot-password {
+    font-size: 12px;
+    color: #00376b;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Sign up container styling */
+.signup-container {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.signup-container p {
+    margin: 0;
+    font-size: 14px;
+    color: #262626;
+}
+
+.signup-container a {
+    color: #0095f6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.signup-container a:hover {
+    text-decoration: underline;
+}
+
+/* Get App section styling */
+.get-app {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.get-app p {
+    font-size: 14px;
+    color: #262626;
+    margin-bottom: 20px;
+}
+
+.app-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between app badges */
+}
+
+.app-links img {
+    height: 40px; /* Fixed height for app store badges */
+    object-fit: contain; /* Ensure images fit without stretching */
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    max-width: 935px; /* Instagram's typical content width */
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 20px; /* Padding for mobile view */
+    box-sizing: border-box;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap; /* Allow links to wrap on small screens */
+    justify-content: center;
+    gap: 15px; /* Space between links */
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #8e8e8e;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    color: #8e8e8e;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 450px) {
+    .login-container, .signup-container {
+        border: none; /* Remove border on very small screens */
+        background-color: transparent; /* Transparent background */
+        max-width: none; /* Allow full width */
+        padding: 20px;
+    }
+
+    body {
+        background-color: #fff; /* White background for the entire page on small screens */
+    }
+
+    /* Adjust footer links for very small screens */
+    .footer-links {
+        gap: 8px 15px; /* Adjust row/column gap */
+    }
+}
